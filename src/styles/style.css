@@ -48,6 +48,20 @@ header {
     padding: 22px 0px;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-neutral-black);
+    border-radius: 2px;
+}
+
 
 
 /* ------------ FIM HEADER ------------ */
@@ -510,14 +524,14 @@ ul {
     border-radius: 8px 0px 0px 8px;
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
-    color: #D9DBE1;
+    color: #ffffff;
 }
 
-.footer-container form input::placeholder{
-    color: #D9DBE1;                                                                                                                                                                                                                                                                                                                                                                                                                                          
+.footer-container form input::placeholder {
+    color: #ffffff;
 }
 
-.footer-container form button{
+.footer-container form button {
     padding: 6.7px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0px 8px 8px 0px;
@@ -525,8 +539,265 @@ ul {
     transition: 0.2s;
 }
 
-.footer-container form button:hover{
+.footer-container form button:hover {
     background-color: var(--color-primary);
 }
 
 /* ------------ FIM FOOTER ------------ */
+
+
+
+@media (max-width: 884px) {
+
+
+    main {
+        text-align: center;
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .content-lessons {
+        width: 390px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+
+    .cards-container {
+        gap: 10px;
+        scale: 0.9;
+    }
+
+    .pixelgrade {
+        gap: 10px;
+    }
+
+    .pixelgrade-content {
+        width: 500px;
+    }
+
+    .helping-local {
+        gap: 10px;
+    }
+
+    .helping-local-statistic {
+        gap: 20px;
+    }
+
+    .how-desing {
+        gap: 10px;
+    }
+
+    .how-desing-content h2,
+    .how-desing-content p {
+        width: 500px;
+    }
+
+    .customer {
+        gap: 10px;
+    }
+
+    .customer-content {
+        width: 500px;
+    }
+
+    .customer-container {
+        flex-direction: column;
+    }
+
+    .caring-marketing-card {
+        scale: 0.8;
+    }
+
+    .caring-marketing-container {
+        gap: 1px;
+    }
+
+    footer {
+        gap: 30px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .logo-clients {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .manage-system h2 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .cards-container article {
+        margin: 0 auto;
+    }
+
+    .pixelgrade {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pixelgrade img {
+        width: 380px;
+    }
+
+    .pixelgrade h2 {
+        font-size: 20px;
+        width: 280px;
+    }
+
+    .pixelgrade-content {
+        width: 380px;
+    }
+
+    .helping-local {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .helping-local h2 {
+        font-size: 30px;
+        width: 280px;
+    }
+
+    .how-desing {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .how-desing img {
+        width: 290px;
+    }
+
+    .how-desing h2 {
+        font-size: 30px;
+        width: 380px;
+    }
+    
+    .how-desing-content{
+        width: 380px;
+        padding: 0;
+    }
+
+    .how-desing p {
+        width: 360px;
+    }
+
+    .customer {
+        flex-direction: column;
+    }
+
+    .customer p {
+        width: 380px;
+    }
+
+    .customer-container {
+        flex-direction: column;
+    }
+
+    .customer-content{
+        width: 380px;
+    }
+
+    .customer-itens{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pellentesque h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .caring-marketing p {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .caring-marketing-container {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .footer-container h2 {
+        font-size: 40px;
+    }
+
+    .social-icons{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icons img{
+        width: 30px;
+    }
+
+    .footer-links {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 300px;
+        text-align: center;
+        display: flex;
+    }
+
+    .footer-navigations {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .footer-container input{
+      width: 80%;
+      height: 60px
+    }
+
+    .footer-container button{
+        height: 60px;
+        width: 60px;
+    }
+
+    .footer-container form input::placeholder{
+        font-size: 20px;
+    }
+
+}
